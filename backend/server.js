@@ -15,8 +15,8 @@ app.use((req, res, next) => {
 });
 
 // router handler
-app.use("/api/workouts", workoutRoutes);
 app.use("/api/user", usersRouter);
+app.use("/api/workouts", workoutRoutes);
 
 // connect to db
 mongoose
@@ -29,5 +29,3 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-
-// listen for requests
