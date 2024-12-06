@@ -7,6 +7,8 @@ const Login = () => {
   const handleSubmit = async () => {
     e.preventDefault();
 
+    // needs connection to database
+
     console.log(email, password);
   };
 
